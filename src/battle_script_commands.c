@@ -3789,7 +3789,7 @@ static void Cmd_getexp(void)
             #if B_SPLIT_EXP < GEN_6
                 if (gSaveBlock2Ptr->expShare) // exp share is turned on
                 {
-                    *exp = SAFE_DIV(calculatedExp / 2, viaSentIn);
+                    *exp = SAFE_DIV(calculatedExp / 4, viaSentIn);
                     if (*exp == 0)
                         *exp = 1;
 

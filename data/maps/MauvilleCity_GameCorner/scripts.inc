@@ -323,7 +323,7 @@ MauvilleCity_GameCorner_EventScript_BuyTM29::
 	goto_if_lt MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForTM
 	checkitem ITEM_TM29, 1
     compare VAR_RESULT, TRUE
-    goto_if_eq MauvilleCity_GameCorner_EventScript_YouAlreadyHaveThisM
+    goto_if_eq MauvilleCity_GameCorner_EventScript_YouAlreadyHaveThis
 	removecoins TM29_COINS
 	additem ITEM_TM29
 	updatecoinsbox 1, 1
